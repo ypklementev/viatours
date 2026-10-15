@@ -388,6 +388,7 @@ a.active {
 	background: rgba(235, 102, 43, 0.05);
 	padding: 120px 220px;
 	border-radius: 24px;
+	width: 80%;
 }
 
 .list{
@@ -411,10 +412,13 @@ a.active {
 	font-weight: 300;
 }
 
-.content{
+.rectangle{
 	position: relative;
 }
 
 .woman-baloons{
 	position: absolute;
+    top: 10%;
+    left: 65%;
+    height: 80%;
 }
