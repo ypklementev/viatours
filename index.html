@@ -1,235 +1,375 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Viatours</title>
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-			rel="stylesheet"
-		/>
-		<link rel="stylesheet" href="style.css" />
-	</head>
-	<body>
-		<nav class="nav">
-			<div class="nav__container">
-				<div class="nav__content">
-					<a class="nav__logo" href="">
-						<img src="img/icons/logo.svg" alt="" />
-					</a>
-					<ul class="nav__links">
-						<li><a class="active" href="">Home</a></li>
-						<li><a href="">Tour</a></li>
-						<li><a href="">Destination</a></li>
-						<li><a href="">Activities</a></li>
-						<li><a href="">Pages</a></li>
-						<li><a href="">Contact</a></li>
-					</ul>
-				</div>
 
-				<div class="nav__action">
-					<span>USD</span>
-					<button class="nav__btn">Sign up</button>
-					<button class="nav__btn accent-btn">Log in</button>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Viatours</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+		rel="stylesheet" />
+	<link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+	<nav class="nav">
+		<div class="nav__container">
+			<div class="nav__content">
+				<a class="nav__logo" href="">
+					<img src="img/icons/logo.svg" alt="" />
+				</a>
+				<ul class="nav__links">
+					<li><a class="active" href="">Home</a></li>
+					<li><a href="">Tour</a></li>
+					<li><a href="">Destination</a></li>
+					<li><a href="">Activities</a></li>
+					<li><a href="">Pages</a></li>
+					<li><a href="">Contact</a></li>
+				</ul>
+			</div>
+
+			<div class="nav__action">
+				<span>USD</span>
+				<button class="nav__btn">Sign up</button>
+				<button class="nav__btn accent-btn">Log in</button>
+			</div>
+		</div>
+	</nav>
+
+	<header class="hero">
+		<div class="container">
+			<div class="hero__content">
+				<h1 class="hero__title">
+					Choose a Country For Your <br />
+					Next Adventure?
+				</h1>
+				<div class="hero__search">
+					<input class="hero__input" type="search" placeholder="Search destinations" />
+					<button class="hero__btn"></button>
+				</div>
+				<div class="categories">
+					<p class="categories__title">Or browse the selected type</p>
+					<div class="category__item">Culture</div>
+					<div class="category__item">Food</div>
+					<div class="category__item">Nature</div>
+					<div class="category__item">Adventure</div>
 				</div>
 			</div>
-		</nav>
-
-		<header class="hero">
+		</div>
+	</header>
+	<main>
+		<section class="tour">
 			<div class="container">
-				<div class="hero__content">
-					<h1 class="hero__title">
-						Choose a Country For Your <br />
-						Next Adventure?
-					</h1>
-					<div class="hero__search">
-						<input
-							class="hero__input"
-							type="search"
-							placeholder="Search destinations"
-						/>
-						<button class="hero__btn"></button>
-					</div>
-					<div class="categories">
-						<p class="categories__title">Or browse the selected type</p>
-						<div class="category__item">Culture</div>
-						<div class="category__item">Food</div>
-						<div class="category__item">Nature</div>
-						<div class="category__item">Adventure</div>
-					</div>
-				</div>
-			</div>
-		</header>
-		<main>
-			<section class="tour">
-				<div class="container">
-					<div class="tour__content">
-						<h2 class="tour__title">Best of <span>New York</span></h2>
-						<div class="tour__cards">
-							<div class="tour__card">
-								<img class="card__img" src="img/images/tour1.webp" alt="" />
-								<div class="card__info">
-									<p class="card__text">New York, USA</p>
-									<h3 class="card__title">
-										Molokini and Turtle Town Snorkeling Adventure Aboard
-									</h3>
-									<div class="card__rating">
-										<span class="rating__stars">★★★★★</span>
-										<span class="rating__value">4.8</span>
-										<span class="rating__count">(243)</span>
-									</div>
-									<div class="card__meta">
-										<p class="meta__date">4 days</p>
-										<p class="meta__cost">
-											From
-											<span>$225</span>
-										</p>
-									</div>
+				<div class="tour__content">
+					<h2 class="tour__title">Best of <span>New York</span></h2>
+					<div class="tour__cards">
+						<div class="tour__card">
+							<img class="card__img" src="img/images/tour1.webp" alt="" />
+							<div class="card__info">
+								<p class="card__text">New York, USA</p>
+								<h3 class="card__title">
+									Molokini and Turtle Town Snorkeling Adventure Aboard
+								</h3>
+								<div class="card__rating">
+									<span class="rating__stars">★★★★★</span>
+									<span class="rating__value">4.8</span>
+									<span class="rating__count">(243)</span>
+								</div>
+								<div class="card__meta">
+									<p class="meta__date">4 days</p>
+									<p class="meta__cost">
+										From
+										<span>$225</span>
+									</p>
 								</div>
 							</div>
-							<div class="tour__card">
-								<img class="card__img" src="img/images/tour2.png" alt="" />
-								<div class="card__info">
-									<p class="card__text">New York, USA</p>
-									<h3 class="card__title">
-										All Inclusive Ultimate Circle Island Day Tour with Lunch
-									</h3>
-									<div class="card__rating">
-										<span class="rating__stars">★★★★★</span>
-										<span class="rating__value">4.8</span>
-										<span class="rating__count">(243)</span>
-									</div>
-									<div class="card__meta">
-										<p class="meta__date">4 days</p>
-										<p class="meta__cost">
-											From
-											<span>$225</span>
-										</p>
-									</div>
+						</div>
+						<div class="tour__card">
+							<img class="card__img" src="img/images/tour2.png" alt="" />
+							<div class="card__info">
+								<p class="card__text">New York, USA</p>
+								<h3 class="card__title">
+									All Inclusive Ultimate Circle Island Day Tour with Lunch
+								</h3>
+								<div class="card__rating">
+									<span class="rating__stars">★★★★★</span>
+									<span class="rating__value">4.8</span>
+									<span class="rating__count">(243)</span>
+								</div>
+								<div class="card__meta">
+									<p class="meta__date">4 days</p>
+									<p class="meta__cost">
+										From
+										<span>$225</span>
+									</p>
 								</div>
 							</div>
-							<div class="tour__card">
-								<img class="card__img" src="img/images/tour3.png" alt="" />
-								<div class="card__info">
-									<p class="card__text">New York, USA</p>
-									<h3 class="card__title">
-										Clear Kayak Tour of Shell Key Preserve and Tampa Bay Area
-									</h3>
-									<div class="card__rating">
-										<span class="rating__stars">★★★★★</span>
-										<span class="rating__value">4.8</span>
-										<span class="rating__count">(243)</span>
-									</div>
-									<div class="card__meta">
-										<p class="meta__date">4 days</p>
-										<p class="meta__cost">
-											From
-											<span>$225</span>
-										</p>
-									</div>
+						</div>
+						<div class="tour__card">
+							<img class="card__img" src="img/images/tour3.png" alt="" />
+							<div class="card__info">
+								<p class="card__text">New York, USA</p>
+								<h3 class="card__title">
+									Clear Kayak Tour of Shell Key Preserve and Tampa Bay Area
+								</h3>
+								<div class="card__rating">
+									<span class="rating__stars">★★★★★</span>
+									<span class="rating__value">4.8</span>
+									<span class="rating__count">(243)</span>
+								</div>
+								<div class="card__meta">
+									<p class="meta__date">4 days</p>
+									<p class="meta__cost">
+										From
+										<span>$225</span>
+									</p>
 								</div>
 							</div>
-							<div class="tour__card">
-								<img class="card__img" src="img/images/tour4.png" alt="" />
-								<div class="card__info">
-									<p class="card__text">New York, USA</p>
-									<h3 class="card__title">
-										Mauna Kea Summit Sunset and Stars Free Astro Photos Hilo
-										Kona
-									</h3>
-									<div class="card__rating">
-										<span class="rating__stars">★★★★★</span>
-										<span class="rating__value">4.8</span>
-										<span class="rating__count">(243)</span>
-									</div>
-									<div class="card__meta">
-										<p class="meta__date">4 days</p>
-										<p class="meta__cost">
-											From
-											<span>$225</span>
-										</p>
-									</div>
+						</div>
+						<div class="tour__card">
+							<img class="card__img" src="img/images/tour4.png" alt="" />
+							<div class="card__info">
+								<p class="card__text">New York, USA</p>
+								<h3 class="card__title">
+									Mauna Kea Summit Sunset and Stars Free Astro Photos Hilo
+									Kona
+								</h3>
+								<div class="card__rating">
+									<span class="rating__stars">★★★★★</span>
+									<span class="rating__value">4.8</span>
+									<span class="rating__count">(243)</span>
+								</div>
+								<div class="card__meta">
+									<p class="meta__date">4 days</p>
+									<p class="meta__cost">
+										From
+										<span>$225</span>
+									</p>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</section>
+			</div>
+		</section>
 
-			<section class="articles">
-				<div class="container">
-					<div class="articles__header">
-						<h2 class="articles__title">Travel Articles</h2>
-						<a href="" class="articles__link">See all</a>
-					</div>
-					<div class="articles__grid">
-						<!-- карточка  -->
-						<div class="articles__card">
-							<div class="articles__image">
-								<img src="img/images/travel1.png" alt="" />
-								<span>Trips</span>
-							</div>
-							<div class="articles__content">
-								<p class="articles__meta">
-									April 06 2023 <span>|</span> By Ali Tufan
-								</p>
-								<h3 class="articles__subtitle">
-									Kenya vs Tanzania Safari: The Better African Safari Experience
-								</h3>
-							</div>
-						</div>
-						<!-- карточка  -->
-						<div class="articles__card">
-							<div class="articles__image">
-								<img src="img/images/travel2.png" alt="" />
-								<span>Trips</span>
-							</div>
-							<div class="articles__content">
-								<p class="articles__meta">
-									April 07 2023 <span>|</span> By Emily Johnson
-								</p>
-								<h3 class="articles__subtitle">
-									Exploring the Serengeti: A Wildlife Adventure
-								</h3>
-							</div>
-						</div>
-						<!-- карточка  -->
-						<div class="articles__card">
-							<div class="articles__image">
-								<img src="img/images/travel3.png" alt="" />
-								<span>Trips</span>
-							</div>
-							<div class="articles__content">
-								<p class="articles__meta">
-									April 08 2023 <span>|</span> By Maxwell Rhodes
-								</p>
-								<h3 class="articles__subtitle">
-									Into the Wild: An Unforgettable Safari Journey
-								</h3>
-							</div>
-						</div>
-						<!-- карточка  -->
-					</div>
+		<section class="trending">
+			<div class="container">
+				<div class="trending__header">
+					<h2 class="trending__title">Trending Destinations</h2>
+					<a href="" class="trending__link">See all</a>
 				</div>
-			</section>
-		</main>
-		<footer class="footer">
-			<div class="footer__top">
-				<div class="footer__expert">
-					Speak to our expert at
-					<a href="tel:+1-800-453-6744">1-800-453-6744</a>
-				</div>
-				<div class="footer__follow">
-					Follow Us
-					<div class="footer__social"></div>
+				<div class="trending__grid">
+					<!-- карточка  -->
+					<div class="trending__card">
+						<div class="trending__image">
+							<img src="img/images/trend1.png" alt="" />
+						</div>
+						<div class="trending__content">
+							<h3 class="trending__subtitle">
+								Cruises
+							</h3>
+							<p class="trending__meta">
+								100+ Tours
+							</p>
+						</div>
+					</div>
+
+					<!-- карточка  -->
+					<div class="trending__card">
+						<div class="trending__image">
+							<img src="img/images/trend2.png" alt="" />
+						</div>
+						<div class="trending__content">
+							<h3 class="trending__subtitle">
+								Beach Tours
+							</h3>
+							<p class="trending__meta">
+								100+ Tours
+							</p>
+						</div>
+					</div>
+
+					<!-- карточка  -->
+					<div class="trending__card">
+						<div class="trending__image">
+							<img src="img/images/trend3.png" alt="" />
+						</div>
+						<div class="trending__content">
+							<h3 class="trending__subtitle">
+								City Tours
+							</h3>
+							<p class="trending__meta">
+								100+ Tours
+							</p>
+						</div>
+					</div>
+
+					<!-- карточка  -->
+					<div class="trending__card">
+						<div class="trending__image">
+							<img src="img/images/trend4.png" alt="" />
+						</div>
+						<div class="trending__content">
+							<h3 class="trending__subtitle">
+								Museum Tour
+							</h3>
+							<p class="trending__meta">
+								100+ Tours
+							</p>
+						</div>
+					</div>
+
+					<!-- карточка  -->
+					<div class="trending__card">
+						<div class="trending__image">
+							<img src="img/images/trend5.png" alt="" />
+						</div>
+						<div class="trending__content">
+							<h3 class="trending__subtitle">
+								Food
+							</h3>
+							<p class="trending__meta">
+								100+ Tours
+							</p>
+						</div>
+					</div>
+
+					<!-- карточка  -->
+					<div class="trending__card">
+						<div class="trending__image">
+							<img src="img/images/trend6.png" alt="" />
+						</div>
+						<div class="trending__content">
+							<h3 class="trending__subtitle">
+								Hiking
+							</h3>
+							<p class="trending__meta">
+								100+ Tours
+							</p>
+						</div>
+					</div>
 				</div>
 			</div>
-			<hr class="footer__line" />
-			<div class="footer__middle"></div>
-			<hr class="footer__line" />
-			<div class="footer__bottom"></div>
-		</footer>
-	</body>
+		</section>
+
+
+		<section class="why-choose-tours">
+			<div class="container">
+				<div class="rectangle">
+					<div class="content">
+						<h2 class="content-header">Why choose
+							Tourz</h2>
+						<div class="list">
+
+							<div class="element">
+								<img src="img/icons/ticket.svg" alt="">
+								<div class="text">
+									<h3>Ultimate flexibility</h3>
+									<p>You’re in control, with free cancellation and
+										payment.</p>
+								</div>
+							</div>
+
+							<div class="element">
+								<img src="img/icons/hot-air-balloon.svg" alt="">
+								<div class="text">
+									<h3>Memorable experiences</h3>
+									<p>Browse and book tours and activities so
+										incredible.</p>
+								</div>
+							</div>
+
+							<div class="element">
+								<img src="img/icons/diamond.svg" alt="">
+								<div class="text">
+									<h3>Quality at our core</h3>
+									<p>High quality standards. Millions of reviews.</p>
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<img class="woman-baloons" src="img/images/women.png" alt="">
+				</div>
+			</div>
+		</section>
+
+		<section class="articles">
+			<div class="container">
+				<div class="articles__header">
+					<h2 class="articles__title">Travel Articles</h2>
+					<a href="" class="articles__link">See all</a>
+				</div>
+				<div class="articles__grid">
+					<!-- карточка  -->
+					<div class="articles__card">
+						<div class="articles__image">
+							<img src="img/images/travel1.png" alt="" />
+							<span>Trips</span>
+						</div>
+						<div class="articles__content">
+							<p class="articles__meta">
+								April 06 2023 <span>|</span> By Ali Tufan
+							</p>
+							<h3 class="articles__subtitle">
+								Kenya vs Tanzania Safari: The Better African Safari Experience
+							</h3>
+						</div>
+					</div>
+					<!-- карточка  -->
+					<div class="articles__card">
+						<div class="articles__image">
+							<img src="img/images/travel2.png" alt="" />
+							<span>Trips</span>
+						</div>
+						<div class="articles__content">
+							<p class="articles__meta">
+								April 07 2023 <span>|</span> By Emily Johnson
+							</p>
+							<h3 class="articles__subtitle">
+								Exploring the Serengeti: A Wildlife Adventure
+							</h3>
+						</div>
+					</div>
+					<!-- карточка  -->
+					<div class="articles__card">
+						<div class="articles__image">
+							<img src="img/images/travel3.png" alt="" />
+							<span>Trips</span>
+						</div>
+						<div class="articles__content">
+							<p class="articles__meta">
+								April 08 2023 <span>|</span> By Maxwell Rhodes
+							</p>
+							<h3 class="articles__subtitle">
+								Into the Wild: An Unforgettable Safari Journey
+							</h3>
+						</div>
+					</div>
+					<!-- карточка  -->
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class="footer">
+		<div class="footer__top">
+			<div class="footer__expert">
+				Speak to our expert at
+				<a href="tel:+1-800-453-6744">1-800-453-6744</a>
+			</div>
+			<div class="footer__follow">
+				Follow Us
+				<div class="footer__social"></div>
+			</div>
+		</div>
+		<hr class="footer__line" />
+		<div class="footer__middle"></div>
+		<hr class="footer__line" />
+		<div class="footer__bottom"></div>
+	</footer>
+</body>
+
 </html>

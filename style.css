@@ -18,6 +18,7 @@
 	left: 0;
 	backdrop-filter: blur(10px);
 }
+
 .nav__container {
 	display: flex;
 	justify-content: space-between;
@@ -32,21 +33,25 @@
 	align-items: center;
 	gap: 39px;
 }
+
 .nav__links {
 	display: flex;
 	align-items: center;
 	list-style: none;
 	gap: 20px;
 }
+
 .nav__links a {
 	text-decoration: none;
 	color: #ffffff;
 	font-size: 14px;
 	transition: 0.3s color;
 }
+
 .nav__links a:hover {
 	color: #eb662b;
 }
+
 a.active {
 	color: #eb662b;
 }
@@ -56,10 +61,12 @@ a.active {
 	gap: 10px;
 	align-items: center;
 }
+
 .nav__action span {
 	font-size: 14px;
 	color: #ffffff;
 }
+
 .nav__btn {
 	font-size: 14px;
 	color: #ffffff;
@@ -69,9 +76,11 @@ a.active {
 	cursor: pointer;
 	transition: 0.3s color;
 }
+
 .nav__btn:hover {
 	color: #eb662b;
 }
+
 .accent-btn {
 	border: 1px solid #ffffff;
 	border-radius: 200px;
@@ -84,6 +93,7 @@ a.active {
 	background-position: center;
 	background-size: cover;
 }
+
 .hero__content {
 	display: flex;
 	flex-direction: column;
@@ -92,12 +102,14 @@ a.active {
 	height: 100vh;
 	text-align: center;
 }
+
 .hero__title {
 	font-size: 70px;
 	font-weight: 600;
 	color: #ffffff;
 	margin-bottom: 75px;
 }
+
 .hero__search {
 	background: #ffffff;
 	border-radius: 200px;
@@ -109,6 +121,7 @@ a.active {
 	padding: 10px;
 	margin-bottom: 70px;
 }
+
 .hero__input {
 	font-size: 14px;
 	background-image: url(img/icons/location.svg);
@@ -121,9 +134,11 @@ a.active {
 	outline: none;
 	margin-left: 15px;
 }
+
 .hero__input::placeholder {
 	color: #757575;
 }
+
 .hero__btn {
 	background: #eb662b;
 	width: 50px;
@@ -134,50 +149,61 @@ a.active {
 	cursor: pointer;
 	transition: 0.3s background;
 }
+
 .hero__btn:hover {
 	background: #c95625;
 }
+
 .categories {
 	color: #ffffff;
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	gap: 40px 20px;
 }
+
 .categories__title {
 	grid-column: 1/-1;
 }
+
 .category__item {
 	background: #ffffff15;
 	padding: 16px 30px;
 	border-radius: 50px;
 }
+
 .tour__content {
 	margin-top: 120px;
 }
+
 .tour__title {
 	font-size: 30px;
 	font-weight: 700;
 	color: #05073c;
 	margin-bottom: 45px;
 }
+
 .tour__title span {
 	color: #c6c6d2;
 }
+
 .tour__cards {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
 	gap: 24px;
 }
+
 .tour__card {
 	border-radius: 12px;
 	border: 1px solid #e7e6e6;
 	overflow: hidden;
 }
+
 .card__img {
 	width: 100%;
 	height: 213px;
 	object-fit: cover;
 }
+
 .card__info {
 	padding: 10px 21px;
 }
@@ -187,38 +213,208 @@ a.active {
 	color: #717171;
 	margin-bottom: 6px;
 }
+
 .card__title {
 	font-size: 16px;
 	font-weight: 500;
 	color: #05073c;
 	margin-bottom: 10px;
 }
+
 .rating__stars {
 	color: #e2ad64;
 }
+
 .rating__value,
 .rating__count {
 	color: #05073c;
 	font-size: 12px;
 }
+
 .card__rating {
 	padding-bottom: 14px;
 	border-bottom: 1px solid #e7e6e6;
 	margin-bottom: 14px;
 }
+
 .card__meta {
 	display: flex;
 	justify-content: space-between;
 }
+
 .meta__date {
 	color: #05073c;
 	font-size: 12px;
 }
+
 .meta__cost {
 	color: #05073c;
 	font-size: 12px;
 }
+
 .meta__cost span {
 	font-size: 14px;
 	font-weight: 500;
+}
+
+.articles {
+	margin-top: 120px;
+	padding: 15px;
+}
+
+.articles__header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.articles__link {
+	color: rgba(5, 7, 60, 1);
+	text-decoration: none;
+}
+
+.articles__title {
+	font-size: 30px;
+	font-weight: 700;
+	color: #05073c;
+	margin-bottom: 45px;
+}
+
+.articles__grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 24px;
+}
+
+.articles__image img {
+	width: 400px;
+	height: auto;
+	object-fit: cover;
+	border-radius: 12px;
+}
+
+.articles__image {
+	position: relative;
+}
+
+.articles__image span {
+	position: absolute;
+	z-index: 10;
+	left: 15px;
+	top: 15px;
+	background: white;
+	padding: 9px 15px;
+	border-radius: 200px;
+}
+
+.articles__content {
+	margin-top: 30px;
+}
+
+.articles__subtitle {
+	margin-top: 15px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.articles__meta {
+	font-size: 16px;
+	font-weight: 300;
+}
+
+/* Trending */
+.trending {
+	margin-top: 120px;
+	padding: 15px;
+}
+
+.trending__header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.trending__link {
+	color: rgba(5, 7, 60, 1);
+	text-decoration: none;
+}
+
+.trending__title {
+	font-size: 30px;
+	font-weight: 700;
+	color: #05073c;
+	margin-bottom: 45px;
+}
+
+.trending__grid {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	gap: 24px;
+}
+
+.trending__image img {
+	min-width: 19px;
+	max-width: 190px;
+	height: auto;
+	object-fit: cover;
+	border-radius: 12px;
+}
+
+.trending__image {
+	position: relative;
+}
+
+.trending__content {
+	margin-top: 30px;
+}
+
+.trending__subtitle {
+	margin-top: 15px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.trending__meta {
+	font-size: 16px;
+	font-weight: 300;
+}
+
+/* Why Choose tourze */
+.why-choose-tours{
+	margin-top: 100px;
+}
+
+.content {
+	background: rgba(235, 102, 43, 0.05);
+	padding: 120px 220px;
+	border-radius: 24px;
+}
+
+.list{
+	margin-top: 60px ;
+	display: flex;
+	flex-direction: column;
+	gap: 35px;
+}
+
+.element{
+	display: flex;
+	gap: 30px;
+}
+
+.text h3{
+	font-weight: 400;
+}
+
+.text p{
+	margin-top: 15px;
+	font-weight: 300;
+}
+
+.content{
+	position: relative;
+}
+
+.woman-baloons{
+	position: absolute;
 }
