@@ -460,6 +460,12 @@ a.active {
 
 .card-button{
 	margin-top: auto;
+	width: 50%;
+	font-size: 14px;
+	padding: 17px 36px;
+	border-radius: 12px;
+	background: white;
+	cursor: pointer;
 }
 
 .card-label, .card-title {
@@ -474,4 +480,71 @@ a.active {
 
 .card-title{
 	font-size: 24px;
+	font-weight: 700;
+	line-height: 36px;
+}
+
+.pop-things{
+	background: rgba(235, 102, 43, 0.05);
+	padding: 120px 0;
+	margin: 120px auto;
+}
+
+.pop-things .container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 250px;
+}
+
+.things-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.things-description{
+	margin: 34px 0;
+}
+
+.things-button{
+	background: rgba(235, 102, 43, 1);
+	border-radius: 12px;
+	padding: 21px;
+	color: white;
+	text-align: center;
+}
+
+.things-grid{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, auto);
+	gap: 30px;
+}
+
+.thing-element{
+	background: rgba(255, 255, 255, 1);
+	padding: 30px 30px;
+	border-radius: 12px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.thing-title {
+	font-weight: 500;
+}
+
+.thing-desc{
+	font-weight: 300;
+}
+
+.circle{
+	background: rgba(254, 247, 244, 1);
+	width: 80px;
+	height: 80px;
+	border-radius: 100px;
+	text-align: center;
+    align-content: center;
+	margin-bottom: 20px;
 }
