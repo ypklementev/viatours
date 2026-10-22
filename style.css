@@ -17,6 +17,7 @@
 	position: fixed;
 	left: 0;
 	backdrop-filter: blur(10px);
+	z-index: 1000;
 }
 
 .nav__container {
@@ -421,4 +422,56 @@ a.active {
     top: 10%;
     left: 65%;
     height: 80%;
+}
+
+.cards-wrapper{
+	margin-top: 225px;
+	display: flex;
+	justify-content: center;
+	gap: 30px;
+}
+
+.card{
+	border-radius: 12px;
+	width: 410px;
+	height: 350px;
+	padding: 40px;
+	display: flex;
+	flex-direction: column;
+}
+
+.card-image-1{
+	background: url(img/images/card1.png);
+	background-position: center;
+	background-size: cover;
+}
+
+.card-image-2{
+	background: url(img/images/card2.png);
+	background-position: center;
+	background-size: cover;
+}
+
+.card-image-3{
+	background: url(img/images/card3.png);
+	background-position: center;
+	background-size: cover;
+}
+
+.card-button{
+	margin-top: auto;
+}
+
+.card-label, .card-title {
+	color: white;
+}
+
+.card-label{
+	font-size: 14px;
+	font-weight: 400;
+	margin-bottom: 10px;
+}
+
+.card-title{
+	font-size: 24px;
 }
